@@ -1,0 +1,148 @@
+/* shared styles  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.noto-serif-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* navbar styles  */
+
+header {}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+.menu-items {
+    display: flex;
+
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+.shop,
+.about {
+    color: rgb(137, 135, 161);
+    font-family: ('Inter');
+    font-size: 16px;
+    font-weight: 400;
+    margin: 50px;
+}
+
+.cart {
+    color: rgb(0, 0, 0);
+    
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.home {
+    color: rgb(37, 36, 50);
+
+    font-size: 16px;
+    font-weight: 700;
+     margin: 50px;
+}
+
+/* fresh flowers styles */
+
+.fresh-flowers {
+    display: flex;
+    align-items: end;
+  
+    margin-top: 200px;
+}
+
+.fresh-flowers h1 {}
+
+.h {font-size: 65px;
+    font-weight: 700;
+
+    color: rgb(0, 0, 0);
+}
+
+.f {
+    font-size: 65px;
+    font-weight: 700;
+    color: rgb(233, 90, 8);
+}
+
+.fresh-flowers p{
+    color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+}
+
+.fresh-img{
+    height: 100%;
+}
+
+/* card styles  */
+
+.our-plants{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.our{
+    font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+color: rgb(233, 90, 8);
+}
+.plants{
+    font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+color: rgb(0, 0, 0);
+}
+.indulge{
+    color: rgba(0, 0, 0, 0.5);
+font-family: ('Inter');
+font-size: 22px;
+font-weight: 400;
+}
+
+@media (max-width:576px) {
+    .about, .home,.shop{
+        display: none;
+    }
+   
+    
+    .fresh-flowers{
+        margin: 20px 0px;
+        flex-direction: column-reverse;
+    }
+    .fresh-flowers .h, .f{
+        font-size: 30px;
+    }
+    .fresh-img{
+        max-width: 100%;
+    }
+    
+}
