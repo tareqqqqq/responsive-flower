@@ -222,24 +222,54 @@ font-weight: 400;
 
 .latest-imgs{
     display:flex ;
-    
+     gap: 30px;
+   
 }
 
 .zabo-plant{
     position: relative;
 }
 .zabo-plant img{
-   background: linear-gradient( rgba(0, 0, 0, 0.4));
-   z-index: +1;
+    border-radius: 20px;
+    
+    
 }
- .h-a{
+
+.one{
+    margin-top: 25px;
+}
+
+ .zabo-plant h3{
      position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: rgb(255, 255, 255);
 
-font-size: 30px;
+font-size: 35px;
+font-weight: 700;
+}
+
+.zabo-plant h4{
+    position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+
+    font-size: 20px;
+font-weight: 500;
+
+
+}
+ .zabo-plant  a{
+     position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+
+font-size: 20px;
 font-weight: 700;
 }
    /* join the color  */
@@ -354,6 +384,34 @@ margin-bottom: 50px;
     .badge-img-one, .latest-img-three, .input-container img{
         max-width: 100%;
     }
+
+    /* input styles  */
+
+    .write-email{
+       padding: 4px; 
+       margin: 3px 0px;
+       
+       
+       
+    }
+
+    .btn-primary{
+        padding: 4px;
+        margin-left: 3px;
+       
+       
+        
+        
+       
+    }
+    .input h1{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
    
    footer{
     grid-template-columns: 1fr;
@@ -362,4 +420,23 @@ margin-bottom: 50px;
    .footer-frist {
     /* gap: 0px; */
    }
+
+   footer,header, .latest-deals, .badge, .cards, .fresh-flowers {
+    padding: 5px;
+   }
+
+   .lily, .card-img, .usd{
+    margin-bottom: 5px;
+   }
+
+    .btn{
+        padding: 10px 35px;
+    }
+
+    .zabo-plant h3{
+        font-size: 20px;
+    }
+    .zabo-plant a{
+        font-size: 15px;
+    }
 }
