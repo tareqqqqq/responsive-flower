@@ -128,8 +128,202 @@ font-size: 22px;
 font-weight: 400;
 }
 
+/* card related styles  */
+
+.card
+
+{
+   
+}
+
+
+
+
+.cards{
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+ gap: 20px;
+
+}
+.card-img{
+    margin-bottom: -20px;
+    width: 100%;
+}
+
+
+.lily{
+    text-align: center;
+    color: rgb(17, 17, 17);
+font-family: ('Inter');
+font-size: 22px;
+font-weight: 500;
+margin-bottom: -20px;
+   
+   
+}
+.usd{
+    text-align: center;
+    color: rgb(17, 17, 17);
+font-family: ('Inter');
+font-size: 22px;
+font-weight: 700;
+
+
+}
+.btn{
+    
+    background: rgb(233, 90, 8);
+    color: rgb(255, 255, 255);
+font-family: ('Inter');
+font-size: 16px;
+font-weight: 600;
+border: none;
+padding: 15px 80px;
+
+
+}
+
+/* badge styles */
+.badge{
+    display: flex;
+    margin-top: 120px;
+}
+.badge-imgs{
+    margin-right: 100px;
+    position: relative;
+}
+
+.badge-img{
+   width: 250px;
+   height: 250px;
+   position: absolute;
+  top: -100px;
+   left: 410px;
+ 
+}
+
+
+
+.list-h{
+    color: rgb(0, 0, 0);
+
+font-size: 50px;
+font-weight: 700;
+
+}
+.list-text{
+color: rgba(0, 0, 0, 0.5);
+font-family: ('Inter');
+font-size: 22px;
+font-weight: 400;
+}
+
+/* styles latest  */
+
+.latest-imgs{
+    display:flex ;
+    
+}
+
+.zabo-plant{
+    position: relative;
+}
+.zabo-plant img{
+   background: linear-gradient( rgba(0, 0, 0, 0.4));
+   z-index: +1;
+}
+ .h-a{
+     position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+
+font-size: 30px;
+font-weight: 700;
+}
+   /* join the color  */
+
+.input-container{
+    position: relative;
+    /* background: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+   
+    text-align: center;
+    justify-content: center;
+   height: 100vh; */
+   margin-top: 100px;
+   max-width: 1440px;
+   margin: 100px auto;
+
+    
+
+}
+
+.input{
+   position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);  
+}
+
+.input h1{
+    color: rgb(255, 255, 255);
+
+font-size: 50px;
+font-weight: 700;
+margin-left: 50px;
+}
+
+.write-email{
+padding: 20px 200px;
+}
+.btn-primary{
+    background: rgb(233, 90, 8);
+    color: rgb(255, 255, 255);
+font-family: ('Inter');
+font-size: 16px;
+font-weight: 600;
+border: none;
+padding: 20px 40px;
+margin-left: -5px;
+
+}
+  /* footer styles */
+
+.footer-home{
+ display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    
+    
+}
+.footer-home a{
+    text-decoration: none;
+    color: rgb(107, 114, 128);
+font-family: ('Inter');
+font-size: 16px;
+font-weight: 400;
+}
+.footer-frist{
+    color: rgba(0, 0, 0, 0.5);
+font-family: ('Inter');
+font-size: 22px;
+font-weight: 400;
+}
+
+.footerbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+align-items: flex-start;
+margin-top: 50px;
+margin-bottom: 50px;
+    }
+
 @media (max-width:576px) {
-    .about, .home,.shop{
+    .about, .home,.shop, .badge-img{
         display: none;
     }
    
@@ -143,6 +337,29 @@ font-weight: 400;
     }
     .fresh-img{
         max-width: 100%;
+        margin: 0px;
     }
-    
+
+    /* cards  */
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+
+    .badge, .latest-imgs, .footerbar{
+        flex-direction: column;
+    }
+    .badge-img-one, .latest-img-three, .input-container img{
+        max-width: 100%;
+    }
+   
+   footer{
+    grid-template-columns: 1fr;
+   } 
+
+   .footer-frist {
+    /* gap: 0px; */
+   }
 }
