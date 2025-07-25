@@ -232,7 +232,7 @@ font-weight: 400;
 }
 .zabo-plant img{
     border-radius: 20px;
-    
+    filter: brightness(60%);
     
 }
 
