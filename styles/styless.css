@@ -68,18 +68,18 @@ header nav ul li a {
     margin: 50px;
 }
 
-/* fresh flowers styles */
+   /* section- start  */
 
 .fresh-flowers {
     display: flex;
     align-items: end;
-
+    
     margin-top: 200px;
 }
 
 
 
-.h {
+.h{
     font-size: 65px;
     font-weight: 700;
 
@@ -100,10 +100,11 @@ header nav ul li a {
 }
 
 .fresh-img {
+    
     height: 100%;
 }
 
-/* card styles  */
+/* card titles styles  */
 
 .our-plants {
     text-align: center;
@@ -132,11 +133,6 @@ header nav ul li a {
 }
 
 /* card related styles  */
-
-
-
-
-
 
 .cards {
     display: grid;
@@ -207,6 +203,8 @@ header nav ul li a {
 
 
 
+
+
 .list-h {
     color: rgb(0, 0, 0);
 
@@ -247,7 +245,7 @@ header nav ul li a {
 
 .zabo-plant h3 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
@@ -278,41 +276,33 @@ header nav ul li a {
     font-weight: 700;
 }
 
-/* join the color  */
+.latest-img-two, .latest-img-one{
+   width: 100%;
+}
 
-.input-container {
-    position: relative;
-    /* background: url(../assets/news-letter-bg.png);
+
+
+/* input container styles  */
+.input-container{
+    background-image: url(../assets/news-letter-bg.png);
     background-repeat: no-repeat;
-   
+    max-width:1440px ;
     text-align: center;
     justify-content: center;
-   height: 100vh; */
-    margin-top: 100px;
-    max-width: 1440px;
+    height: contain;
     margin: 100px auto;
-
-
-
+    
 }
-
-.input {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .input h1 {
     color: rgb(255, 255, 255);
 
     font-size: 50px;
     font-weight: 700;
-    margin-left: 50px;
+   
 }
 
 .write-email {
-    padding: 20px 200px;
+    padding: 20px;
 }
 
 .btn-primary {
@@ -326,8 +316,9 @@ header nav ul li a {
     margin-left: -5px;
 
 }
+ /* footer related styles  */
 
-/* footer styles */
+ /* footer styles */
 
 .footer-home {
     display: flex;
@@ -364,7 +355,9 @@ header nav ul li a {
     margin-bottom: 50px;
 }
 
-@media (max-width:576px) {
+
+  /* responsive  */
+  @media (max-width:576px) {
 
     .about,
     .home,
@@ -372,94 +365,45 @@ header nav ul li a {
     .badge-img {
         display: none;
     }
-}
+       /* fresh floewrs  */
+    .h, .f, .our, .plants,.list-h, .input h1{
+        font-size: 25px;
+    }
+    .fresh-flowers{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .list-h,.list-text{
+        text-align: center;
+    }
 
-
-.fresh-flowers {
-    margin: 20px 0px;
-    flex-direction: column-reverse;
-}
-
-.fresh-flowers .h,
-.f,
-.our,
-.plants,
-.list-h {
-    font-size: 30px;
-}
-
-.fresh-img {
-    max-width: 100%;
-    margin: 0px;
-}
-
-.indulge,
-.list-text {
-    font-size: 15px;
-}
-
-
-/* cards  */
-.cards {
+    .fresh-flowers p, .indulge,.list-text {
+        font-size: 15px;
+    }
+    /* card styles  */
+    .cards {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.btn {
-    padding: 10px 60px;
-}
+/* badges related styles  */
 
 .badge,
 .latest-imgs,
+.zabo-container
 .footerbar {
     flex-direction: column;
 }
 
-.badge-img-one,
-.input-container img {
+.latest-img-three, .input-container{
     max-width: 100%;
 }
-
-
-
-
-
-.latest-imgs {
-    gap: 20px;
+.zabo-plant h3{
+    font-size: 25px;
 }
 
-.latest-img-three,
-.latest-img-two,
-.latest-img-one {
-    max-width: 100%;
-
-}
-
-/* input styles  */
-
-.write-email {
-    padding: 4px;
-    margin: 3px 0px;
-
-
-
-}
-
-.btn-primary {
-    padding: 4px;
-    margin-left: 3px;
-
-
-
-
-
-}
-
-.input h1 {
-    margin-left: 0px;
-    font-size: 15px;
+.footerbar {
+    flex-direction: column;
 }
 
 
-footer {
-    grid-template-columns: 1fr;
 }
