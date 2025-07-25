@@ -359,13 +359,14 @@ margin-bottom: 50px;
     .about, .home,.shop, .badge-img{
         display: none;
     }
+    }
    
     
     .fresh-flowers{
         margin: 20px 0px;
         flex-direction: column-reverse;
     }
-    .fresh-flowers .h, .f, .our, .plants{
+    .fresh-flowers .h, .f, .our, .plants, .list-h{
         font-size: 30px;
     }
     .fresh-img{
@@ -373,9 +374,10 @@ margin-bottom: 50px;
         margin: 0px;
     }
 
-.indulge{
+.indulge, .list-text{
     font-size: 15px;
 }
+
 
     /* cards  */
     .cards{
