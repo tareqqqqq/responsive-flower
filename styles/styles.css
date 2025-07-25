@@ -222,7 +222,7 @@ font-weight: 400;
 
 .latest-imgs{
     display:flex ;
-     gap: 30px;
+     
    
 }
 
@@ -235,9 +235,9 @@ font-weight: 400;
     
 }
 
-.one{
+/* .one{
     margin-top: 25px;
-}
+} */
 
  .zabo-plant h3{
      position: absolute;
@@ -364,7 +364,7 @@ margin-bottom: 50px;
         margin: 20px 0px;
         flex-direction: column-reverse;
     }
-    .fresh-flowers .h, .f{
+    .fresh-flowers .h, .f, .our, .plants{
         font-size: 30px;
     }
     .fresh-img{
@@ -372,7 +372,9 @@ margin-bottom: 50px;
         margin: 0px;
     }
 
-
+.indulge{
+    font-size: 15px;
+}
 
     /* cards  */
     .cards{
@@ -382,15 +384,24 @@ margin-bottom: 50px;
         padding: 10px 20px;
     }
 
-    .badge, .latest-imgs, .footerbar{
+    .badge,.latest-imgs, .footerbar{
         flex-direction: column;
     }
-    .badge-img-one, .latest-img-three, .input-container img{
+    .badge-img-one, .input-container img{
         max-width: 100%;
     }
 
     .badges-img-one{
         margin: 5px;
+    }
+
+
+    .latest-imgs{
+        gap: 20px;
+    }
+    .latest-img-three, .latest-img-two, .latest-img-one{
+        max-width: 100%;
+      
     }
 
     /* input styles  */
@@ -416,38 +427,14 @@ margin-bottom: 50px;
         margin-left: 0px;
         font-size: 15px;
     }
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
+   
    
    footer{
     grid-template-columns: 1fr;
    } 
 
-   .footer-frist {
-    /* gap: 0px; */
-   }
-
-   footer,header, .latest-deals, .badge, .cards, .fresh-flowers {
-    padding: 5px;
-   }
-
-   .lily, .card-img, .usd{
-    margin-bottom: 5px;
-   }
-
-    .btn{
-        padding: 10px 35px;
-    }
-
-    .zabo-plant h3{
-        font-size: 20px;
-    }
-    .zabo-plant a{
-        font-size: 15px;
-    }
-
+   
+  
     .display-none{
         display: none;
     }
